@@ -82,7 +82,7 @@
                 android:background="@drawable/rounded"
                 android:gravity="center"
                 android:text="PREMIUM"
-                android:textColor="@color/orange"
+                android:textColor="@color/Primaryorange"
                 android:textSize="12dp" />
 
             <LinearLayout
