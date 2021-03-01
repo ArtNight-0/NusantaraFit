@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/prev"
+            android:gravity="left"
+            android:layout_width="120dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="right" />
+
+        <TextView
+            android:layout_below="@id/prev"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Select Your Mrthod"
+            android:textColor="@color/black"/>
+        <GridLayout
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <Button
+                android:layout_margin="10dp"
+                android:width="120dp"
+                android:height="80dp"/>
+            <Button
+                android:layout_margin="10dp"
+                android:width="120dp"
+                android:height="80dp"/>
+            <Button
+                android:layout_margin="10dp"
+                android:width="120dp"
+                android:height="80dp"/>
+        </GridLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Enter Your Payment Detail"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_marginTop="30dp"
+                android:gravity="left"
+                android:textSize="12dp"
+                android:hint="*Cardholder Member"
+                android:background="#B8B7B7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+            <EditText
+                android:layout_marginTop="30dp"
+                android:gravity="left"
+                android:textSize="12dp"
+                android:hint="*Card Number"
+                android:background="#B8B7B7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_marginTop="30dp"
+                    android:gravity="left"
+                    android:textSize="12dp"
+                    android:hint="*Exparation Date "
+                    android:background="#B8B7B7"
+                    android:layout_width="170dp"
+                    android:layout_height="80dp"/>
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="left"
+                    android:textSize="12dp"
+                    android:hint="*Cvv"
+                    android:background="#B8B7B7"
+                    android:layout_width="170dp"
+                    android:layout_height="80dp"/>
+            </GridLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
