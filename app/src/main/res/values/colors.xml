@@ -16,4 +16,12 @@
         <color name="teal_200">#FF03DAC5</color>
         <color name="white">#FFFFFFFF</color>
 
+    <color name="colorBlack">#42000000</color>
+    <color name="colorLayout">#FFDC00</color>
+    <color name="colorLayout3">#FAFAFA</color>
+    <color name="colorLogo">#FFC107</color>
+    <color name="colorLine">#C0B071</color>
+    <color name="colorSettings">#CAC6B0</color>
+    <color name="colorSuccess">#00AB5E</color>
+
 </resources>
