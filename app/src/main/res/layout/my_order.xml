@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgorund"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="#FFC107">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:text="PREVIOUS"
+            android:textColor="#636262" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="My Order"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/curva1" />
+
+        <Button
+            android:id="@+id/chat1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/cart" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/curva1" />
+
+        <Button
+            android:id="@+id/troli1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/comment" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="103dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="In the process"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="103dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="On the way"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="103dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Return of goods"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="103dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="cancellation"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <ImageView
+            android:id="@+id/imgorder"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/product"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imgorder"
+            android:text="No order yet"
+            android:textSize="28dp"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+</LinearLayout>
