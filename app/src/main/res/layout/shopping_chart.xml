@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg5">
+
+    <ImageButton
+        android:id="@+id/bPrevious"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:src="@drawable/previous"
+        app:backgroundTint="#fff"
+        android:text="Previous"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:shadowColor="@color/black"/>
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#fff"
+        android:src="@drawable/grroup23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="70dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Shopping Cart"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#FF0000"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/nProduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:text="Name Product"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+            <TextView
+                android:id="@+id/nBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Brand"
+                android:textColor="#656565"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/nProduk"
+                android:layout_marginLeft="100dp"
+                android:textSize="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality : 1"
+                android:textColor="#656565"
+                android:textSize="10dp"
+                android:layout_below="@id/nBrand"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_red"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$999,99.00"
+                android:textColor="#FF0000"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#FFB74D"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/nProduk1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:text="Name Product"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+            <TextView
+                android:id="@+id/nBrand1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Brand"
+                android:textColor="#656565"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/nProduk1"
+                android:layout_marginLeft="100dp"
+                android:textSize="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality : 1"
+                android:textColor="#656565"
+                android:textSize="10dp"
+                android:layout_below="@id/nBrand1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_red"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$999,99.00"
+                android:textColor="#FFB74D"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#FFEB3B"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/nProduk2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:text="Name Product"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+            <TextView
+                android:id="@+id/nBrand2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Brand"
+                android:textColor="#656565"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/nProduk2"
+                android:layout_marginLeft="100dp"
+                android:textSize="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality : 1"
+                android:textColor="#656565"
+                android:textSize="10dp"
+                android:layout_below="@id/nBrand2"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_red"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$999,99.00"
+                android:textColor="#FFEB3B"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg5">
+
+            <TextView
+                android:id="@+id/subtot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:textColor="#656565"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="50dp"
+                android:textSize="16dp"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/zip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZIP Code"
+                android:textColor="#656565"
+                android:textSize="16dp"
+                android:layout_below="@id/subtot"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:layout_below="@id/zip"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="50dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$999,99.00"
+                android:textColor="#656565"
+                android:textSize="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/zCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12s6sd7fs5"
+                android:textColor="#656565"
+                android:textSize="16dp"
+                android:layout_below="@id/sub"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$999,99.00"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/zCode"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentRight="true" />
+
+            <Button
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#FFB74D"
+                android:text="B U Y   N O W"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
