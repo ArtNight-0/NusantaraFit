@@ -6,4 +6,5 @@
     <string name="title_profile">Profile</string>
     <string name="title_plus">lus</string>
     <string name="nusa_default">Nusa (Default)</string>
+    <string name="underline"><u>Description</u></string>
 </resources>
