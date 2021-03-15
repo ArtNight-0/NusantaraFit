@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class PayAdapter extends ArrayAdapter<com.example.project_nusantarafit.Pay> {
+public class PayAdapter extends ArrayAdapter<Pay> {
     public PayAdapter(Context context, ArrayList<com.example.project_nusantarafit.Pay> pay) { super(context, 0, pay);}
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
-        com.example.project_nusantarafit.Pay pay = getItem(position);
+        Pay pay = getItem(position);
 
         if(convertView == null ) {
             convertView = LayoutInflater. from(getContext()).inflate(R.layout.row_list, parent, false);

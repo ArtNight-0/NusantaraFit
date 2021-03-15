@@ -21,7 +21,7 @@
             android:src="@drawable/map"
             android:id="@+id/button"
             android:layout_width="60dp"
-            android:backgroundTint="#0000000"
+            android:backgroundTint="@color/transparent"
             android:layout_height="60dp"
             android:layout_alignParentRight="true"
             android:gravity="right" />

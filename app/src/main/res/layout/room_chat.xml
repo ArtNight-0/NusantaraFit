@@ -64,21 +64,24 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="500dp">
-
-        <ImageView
-            android:id="@+id/imgorder"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/comment" />
-
-        <TextView
+ //diganti jadi recyclerview
+<!--        <ImageView-->
+<!--            android:id="@+id/imgorder"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/comment" />-->
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/imgorder"
-            android:text="No chat history"
-            android:textAlignment="center"
-            android:textSize="28dp" />
+            android:layout_height="match_parent" />
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@+id/imgorder"-->
+<!--            android:text="No chat history"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="28dp" />-->
     </RelativeLayout>
 </LinearLayout>

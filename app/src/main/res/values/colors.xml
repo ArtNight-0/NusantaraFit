@@ -23,6 +23,7 @@
     <color name="colorLine">#C0B071</color>
     <color name="colorSettings">#CAC6B0</color>
     <color name="colorSuccess">#00AB5E</color>
+    <color name="transparent">#00000000</color>
 
 
 </resources>

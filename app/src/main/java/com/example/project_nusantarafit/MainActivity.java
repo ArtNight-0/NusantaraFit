@@ -17,24 +17,24 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.home_fragment);
         ArrayList<Pay> arrayPay = new ArrayList<>();
-        PayAdapter adapter = new PayAdapter(this, arrayPay);
-        ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(adapter);
-
-        Pay pay = new Pay(R.drawable.logo, "Fill in the balance", "11.12.21", "+ 7.750.000", "Success");
-        adapter.add(pay);
-
-        pay = new Pay(R.drawable.logo, "Payment", "11.12.21", "+ 10.000.000", "Succes");
-        adapter.add(pay);
-
-        pay = new Pay(R.drawable.logo, "Transfer", "11.12.21", "+ 100.000.000", "Failed");
-        adapter.add(pay);
+//        PayAdapter adapter = new PayAdapter(this, arrayPay);
+//        ListView listView = (ListView) findViewById(R.id.list);
+//        listView.setAdapter(adapter);
+//
+//        Pay pay = new Pay(R.drawable.logo, "Fill in the balance", "11.12.21", "+ 7.750.000", "Success");
+//        adapter.add(pay);
+//
+//        pay = new Pay(R.drawable.logo, "Payment", "11.12.21", "+ 10.000.000", "Succes");
+//        adapter.add(pay);
+//
+//        pay = new Pay(R.drawable.logo, "Transfer", "11.12.21", "+ 100.000.000", "Failed");
+//        adapter.add(pay);
 
         loadFragment(new HomeFragment());
 
-        BottomNavigationView navigation = findViewById(R.id.navigation);
+        BottomNavigationView navigation = findViewById(R.id.mobile_navigation);
         navigation.setOnNavigationItemSelectedListener(this);
         navigation.setItemIconTintList(null);
     }
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         if(fragment != null){
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.fragment_container, fragment)
+                    .replace(R.id.fragment_container_view_tag, fragment)
                     .commit();
             return  true;
         }
