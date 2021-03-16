@@ -212,10 +212,10 @@
             android:background="@drawable/rounded3"
             android:elevation="10dp">
 
-            <ListView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pf_recycler1"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:orientation="vertical"></ListView>
+                android:layout_height="150dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -225,10 +225,10 @@
             android:background="@drawable/rounded3"
             android:elevation="10dp">
 
-            <ListView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pf_recycler2"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="vertical"></ListView>
+                android:layout_height="150dp"/>
         </LinearLayout>
 
 

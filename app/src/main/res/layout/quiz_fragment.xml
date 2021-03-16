@@ -212,10 +212,10 @@
             android:background="@drawable/rounded3"
             android:elevation="10dp">
 
-            <ListView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/qz_recycler"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"></ListView>
+                android:layout_height="match_parent"/>
         </LinearLayout>
     </LinearLayout>
 
