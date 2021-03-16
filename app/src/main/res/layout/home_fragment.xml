@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -102,7 +101,6 @@
         android:scaleType="fitCenter"
         android:src="@drawable/flash_sale" />
     <TextView
-        android:textAlignment="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Flash Sale"/>
@@ -121,7 +119,6 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/men" />
             <TextView
-                android:textAlignment="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="For Men"/>
@@ -140,7 +137,6 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/woman" />
             <TextView
-                android:textAlignment="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="For Woman"/>
@@ -159,7 +155,6 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/free" />
             <TextView
-                android:textAlignment="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Free Shiping"/>
