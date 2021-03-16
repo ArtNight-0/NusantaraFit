@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_fragment);
-        ArrayList<Pay> arrayPay = new ArrayList<>();
+//        ArrayList<Pay> arrayPay = new ArrayList<>();
 //        PayAdapter adapter = new PayAdapter(this, arrayPay);
 //        ListView listView = (ListView) findViewById(R.id.list);
 //        listView.setAdapter(adapter);
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         if(fragment != null){
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.fragment_container_view_tag, fragment)
+                    .replace(R.id.frameLayout, fragment)
                     .commit();
             return  true;
         }
