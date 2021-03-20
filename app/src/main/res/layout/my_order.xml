@@ -11,23 +11,25 @@
         android:layout_width="match_parent"
         android:layout_height="115dp"
         android:background="#FFC107">
-        <Button
+        <ImageButton
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:background="#FFFFFF"
-            android:text="PREVIOUS"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/previous"
             android:textColor="#636262" />
 
         <TextView
             android:layout_width="130dp"
             android:layout_height="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
             android:text="My Order"
-            android:textAlignment="center"
-            android:textColor="#000"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
             android:textSize="30dp" />
+        <RelativeLayout
+            android:layout_marginTop="-15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="50dp"
@@ -42,7 +44,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="70dp"
             android:background="@drawable/cart" />
 
@@ -59,9 +61,10 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/comment" />
+        </RelativeLayout>
     </RelativeLayout>
 
     <LinearLayout
@@ -94,24 +97,32 @@
             android:text="cancellation"
             android:textAlignment="center"/>
     </LinearLayout>
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp">
-        <ImageView
-            android:id="@+id/imgorder"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/product"
-            />
-        <TextView
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/imgorder"
-            android:text="No order yet"
-            android:textSize="28dp"
-            android:textAlignment="center"/>
-    </RelativeLayout>
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="500dp">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imgorder"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/product"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@+id/imgorder"-->
+<!--            android:text="No order yet"-->
+<!--            android:textSize="28dp"-->
+<!--            android:textAlignment="center"/>-->
+<!--    </RelativeLayout>-->
 </LinearLayout>

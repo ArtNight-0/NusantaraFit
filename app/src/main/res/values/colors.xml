@@ -15,6 +15,7 @@
         <color name="purple_700">#FF3700B3</color>
         <color name="teal_200">#FF03DAC5</color>
         <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
 
     <color name="colorBlack">#42000000</color>
     <color name="colorLayout">#FFDC00</color>

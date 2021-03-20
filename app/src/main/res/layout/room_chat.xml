@@ -1,42 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/backgorund"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="115dp"
         android:background="#FFC107">
 
-        <Button
+        <ImageButton
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:background="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/previous"
             android:text="PREVIOUS"
             android:textColor="#636262" />
-
-        <EditText
-            android:layout_width="260dp"
-            android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/curva1"
-            android:hint="Search contacts and Sellers" />
-
-        <Button
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="25dp"
-            android:background="@drawable/search" />
-    </RelativeLayout>
+        <androidx.appcompat.widget.SearchView
+            app:queryHint="Search Contact and Seller"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:background="@drawable/rounded"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,7 +56,7 @@
             android:textSize="24dp" />
     </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="500dp">
  //diganti jadi recyclerview
@@ -83,5 +78,6 @@
 <!--            android:text="No chat history"-->
 <!--            android:textAlignment="center"-->
 <!--            android:textSize="28dp" />-->
-    </RelativeLayout>
-</LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

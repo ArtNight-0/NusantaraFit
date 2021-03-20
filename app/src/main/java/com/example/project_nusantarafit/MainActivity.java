@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
@@ -34,9 +35,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         loadFragment(new HomeFragment());
 
-        BottomNavigationView navigation = findViewById(R.id.mobile_navigation);
+        BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(this);
-        navigation.setItemIconTintList(null);
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         if(fragment != null){
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frameLayout, fragment)
+                    .replace(R.id.fragment_container , fragment)
                     .commit();
             return  true;
         }

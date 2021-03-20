@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,47 +8,41 @@
     android:background="#ffffff"
     android:orientation="vertical">
 
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
+        <androidx.appcompat.widget.SearchView
+            android:layout_margin="8dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Primaryorange"
+            android:background="@drawable/rounded"/>
 
-        <EditText
-            android:textColor="#000000"
-            android:id="@+id/edtSearch"
-            android:layout_width="280dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#FFB74D"
-            android:background="@drawable/rounded"
-            android:gravity="center"
-            android:hint="Search"
-            android:textColorHint="#ffffff"
-            android:paddingLeft="-150dp" />
+
 
         <ImageButton
-            android:backgroundTint="#FFFFB74D"
-            android:id="@+id/btnSearch"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginLeft="-40dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/ic_baseline_search_24" />
-
-        <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded2"
             android:padding="5dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/cart" />
 
-        <ImageView
+        <ImageButton
+            android:scaleType="fitCenter"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded2"
             android:padding="5dp"
@@ -55,7 +50,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="60dp"
         android:background="#FFB74D"
         android:layout_width="match_parent"
         android:layout_height="229dp"
@@ -82,7 +77,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="300dp"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -181,118 +176,43 @@
 
 
     </LinearLayout>
-
-    <ScrollView
+    <LinearLayout
+        android:layout_marginTop="400dp"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-       android:layout_height="match_parent"
-        android:gravity="center">
-
-    <GridLayout
-        android:layout_margin="5dp"
-        android:gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageButton
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/square"
-            android:padding="5dp"
-            android:scaleType="fitCenter"/>
-        <ImageButton
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/square"
-            android:padding="5dp"
-            android:scaleType="fitCenter"/>
-        <ImageButton
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/square"
-            android:padding="5dp"
-            android:scaleType="fitCenter"/>
-        <ImageButton
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/square"
-            android:padding="5dp"
-            android:scaleType="fitCenter"/>
-        <ImageButton
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/square"
-            android:padding="5dp"
-            android:scaleType="fitCenter"/>
-        <ImageButton
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/square"
-            android:padding="5dp"
-            android:scaleType="fitCenter"/>
-    </GridLayout>
         <GridLayout
-            android:layout_margin="5dp"
-            android:gravity="center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/square"
-                android:padding="5dp"
-                android:scaleType="fitCenter"/>
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/square"
-                android:padding="5dp"
-                android:scaleType="fitCenter"/>
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/square"
-                android:padding="5dp"
-                android:scaleType="fitCenter"/>
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/square"
-                android:padding="5dp"
-                android:scaleType="fitCenter"/>
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/square"
-                android:padding="5dp"
-                android:scaleType="fitCenter"/>
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/square"
-                android:padding="5dp"
-                android:scaleType="fitCenter"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            </LinearLayout>
+
         </GridLayout>
+
     </LinearLayout>
-    </ScrollView>
+    </FrameLayout>
 
 
-</LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        android:background="@color/Primaryorange"
+        android:transformPivotX="@dimen/activity_horizontal_margin"
+        android:backgroundTint="@color/transparent"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
