@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/team"/>
+
+    /*Nama*/
+    <EditText
+        android:id="@+id/txtNameReg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.7"
+        android:background="@drawable/rounded"
+        android:hint="Name"/>
+
+    /*Email*/
+    <EditText
+        android:id="@+id/txtEmailReg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.7"
+        android:background="@drawable/rounded"
+        android:hint="Email"/>
+
+    /*Password*/
+    <EditText
+        android:id="@+id/txtPasswordReg"
+        app:passwordToggleEnabled="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.7"
+        android:background="@drawable/rounded"
+        android:hint="Password"/>
+
+    /*Confirm Password*/
+    <EditText
+        android:id="@+id/txtConPasswordReg"
+        app:passwordToggleEnabled="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.7"
+        android:background="@drawable/rounded"
+        android:hint="Password"/>
+
+    /*Back To Login*/
+    <TextView
+        android:id="@+id/tvBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Back to Login"/>
+
+    /*Register Button*/
+    <ImageButton
+        android:id="@+id/btnRegister"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow_forward"
+        android:backgroundTint="#FFEA00"
+        android:background="@drawable/rounded"/>
+
+</LinearLayout>

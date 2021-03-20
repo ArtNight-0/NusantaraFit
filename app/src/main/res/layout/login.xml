@@ -56,7 +56,7 @@
     
     /*Have Account*/
     <TextView
-        android:id="@+id/tvHaveAccount"
+        android:id="@+id/tvDontHaveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
