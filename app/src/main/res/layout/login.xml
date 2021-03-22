@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,100 +12,113 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/logo"/>
+        android:src="@drawable/logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="50dp" />
 
-    /*Username*/
     <EditText
         android:id="@+id/txtUsernameLog"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:padding="16dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
         android:alpha="0.7"
+        android:background="@drawable/rounded"
         android:drawableLeft="@drawable/username"
         android:drawablePadding="16dp"
-        android:background="@drawable/rounded"
-        android:hint="Username"/>
+        android:hint="Username"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="272dp" />
 
-    /*Password*/
     <EditText
         android:id="@+id/txtPasswordLog"
-        app:passwordToggleEnabled="true"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:padding="16dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="40dp"
         android:alpha="0.7"
+        android:background="@drawable/rounded"
         android:drawableLeft="@drawable/password"
         android:drawablePadding="16dp"
-        android:background="@drawable/rounded"
-        android:hint="Password"/>
-    
-    /*Login*/
+        android:hint="Password"
+        android:padding="16dp"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="340dp" />
+
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/rounded3"
         android:layout_gravity="center"
+        android:background="@drawable/rounded3"
         android:text="Log in"
-        android:textSize="50dp"/>
-    
-    /*Have Account*/
+        android:textSize="50dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="415dp" />
+
     <TextView
         android:id="@+id/tvDontHaveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Don't have an account ?"/>
-    
-    /*Pilihan*/
+        android:text="Don't have an account ?"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="482dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="OR"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="539dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login with"
         android:textAllCaps="true"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="579dp" />
 
-    /*Login dengan...*/
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        //Facebook
-        <ImageButton
-            android:id="@+id/ibFacebook"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/facebook"
-            android:backgroundTint="#FFEA00"
-            android:background="@drawable/rounded"/>
-        //Whatsapp
-        <ImageButton
-            android:id="@+id/ibWhatsapp"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/whatsapp"
-            android:backgroundTint="#FFEA00"
-            android:background="@drawable/rounded"/>
-        //Google
-        <ImageButton
-            android:id="@+id/ibGoogle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/google"
-            android:backgroundTint="#FFEA00"
-            android:background="@drawable/rounded"/>
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/ibWhatsapp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#FFEA00"
+        android:src="@drawable/whatsapp"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="615dp"
+        tools:ignore="MissingConstraints" />
 
-</LinearLayout>
+    <ImageButton
+        android:id="@+id/ibFacebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#FFEA00"
+        android:src="@drawable/facebook"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="615dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/ibGoogle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#FFEA00"
+        android:src="@drawable/google"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="615dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
