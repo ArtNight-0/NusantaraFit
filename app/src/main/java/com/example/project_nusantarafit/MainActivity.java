@@ -1,8 +1,11 @@
 package com.example.project_nusantarafit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ListView;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +14,9 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.ArrayList;
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+//    ImageButton shopping;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 //
 //        pay = new Pay(R.drawable.logo, "Transfer", "11.12.21", "+ 100.000.000", "Failed");
 //        adapter.add(pay);
+
+
+        //shopping chart
+//        shopping = (ImageButton) findViewById(R.id.chat);
+//        shopping.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent shopping = new Intent(MainActivity.this, ShoppingChartActivity.class);
+//                startActivity(shopping);
+//            }
+//        });
+
 
         loadFragment(new HomeFragment());
 
@@ -69,4 +84,16 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         return false;
     }
 
+    @Override
+    public void onClick(View v) {
+//        switch (v.getId()){
+//            case R.id.sChart :
+//                Toast.makeText(this,"klik", Toast.LENGTH_SHORT);
+//                Intent shopping = new Intent(MainActivity.this, ShoppingChartActivity.class);
+//                startActivity(shopping);
+//                break;
+//            default:
+//                break;
+//        }
+    }
 }
