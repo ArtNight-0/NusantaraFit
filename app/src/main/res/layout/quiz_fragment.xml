@@ -149,7 +149,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-30dp"
+                android:layout_marginTop="-20dp"
                 android:gravity="center"
                 android:text="Voucher"
                 android:textSize="20dp" />
@@ -212,17 +212,152 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="240dp"
             android:layout_margin="20dp"
             android:background="@drawable/rounded3"
             android:elevation="10dp">
+    <RelativeLayout
+    android:id="@+id/cerita1"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="20dp">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/qz_recycler"
+    <ImageView
+    android:layout_width="50dp"
+    android:layout_height="80dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/history"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="The history of an Indonesian brand"
+        android:textSize="14dp" />
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/grroup26"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:layout_marginRight="0dp"/>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_margin="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardview_dark_background"/>
+
+</RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cerita2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
+                android:layout_height="60dp"
+                android:elevation="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/architecture_and_city"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Guess the brand logo from Indonesia"
+                    android:textSize="14dp" />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/grroup26"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="15dp"
+                    android:layout_marginRight="0dp"/>
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/cardview_dark_background"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cerita3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:elevation="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/photo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Matching the fashion image of a brand"
+                    android:textSize="14dp" />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/grroup26"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="15dp"
+                    android:layout_marginRight="0dp"/>
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/cardview_dark_background"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/cerita4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:elevation="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/question_mark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Guess somewhere Indonesian brand"
+                    android:textSize="14dp" />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/grroup26"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="15dp"
+                    android:layout_marginRight="0dp"/>
+
+            </RelativeLayout>
+
+
+
+            </LinearLayout>
+
     </LinearLayout>
 
     </FrameLayout>
