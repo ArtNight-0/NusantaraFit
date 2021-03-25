@@ -42,31 +42,32 @@
             android:elevation="20dp">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="80dp"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/clothes"/>
+                android:background="@drawable/icon_hoodie"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="85dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="10dp"
                 android:text="Hoodie Oni Mask"
                 android:textSize="14dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="85dp"
+                android:layout_marginLeft="65dp"
                 android:text="1x"
                 android:layout_alignParentBottom="true"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rp.150.000"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:layout_alignParentRight="true"
-                android:layout_margin="15dp"
+                android:layout_margin="10dp"
+
                 android:layout_marginRight="0dp"/>
 
         </RelativeLayout>
