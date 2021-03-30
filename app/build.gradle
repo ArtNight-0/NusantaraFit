@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+//Firebase Plugin
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -39,4 +41,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.0-alpha02'
     //barcode
     implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+    implementation 'com.google.firebase:firebase-analytics'
 }

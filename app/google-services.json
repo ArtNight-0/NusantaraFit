@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "382303566562",
+    "project_id": "nusantarafit-d104a",
+    "storage_bucket": "nusantarafit-d104a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382303566562:android:f4dba97e4ab5a6b9dcbcbb",
+        "android_client_info": {
+          "package_name": "com.example.project_nusantarafit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382303566562-ekjhab13udu0tcnl4qdoecoh6oveldog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnMDzmxLZ7NeyGVjnQQIK2X7tC4G3nmSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382303566562-ekjhab13udu0tcnl4qdoecoh6oveldog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
