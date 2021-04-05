@@ -10,8 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ShoppingChartActivity"></activity>
+        <activity android:name=".ShoppingChartActivity"/>
         <activity android:name=".ChatActivity"/>
+        <activity android:name=".quiz1"/>
         <activity android:name=".SearchMasterActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>

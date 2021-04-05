@@ -71,5 +71,4 @@ public class HomeFragment extends Fragment {
         Intent intent = new Intent(getActivity(), LoginActivity.class);
         startActivity(intent);
     }
-
 }

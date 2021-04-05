@@ -238,6 +238,7 @@
         android:text="The history of an Indonesian brand"
         android:textSize="14dp" />
     <Button
+        android:id="@+id/btn_quiz1"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/grroup26"
