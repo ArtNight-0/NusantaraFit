@@ -16,7 +16,7 @@ public class QuizFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState){
-        View rootView = inflater.inflate(R.layout.quiz_fragment,
+        View rootView = inflater.inflate(R.layout.nusantara_quiz_fragment,
                 container, false);
 
         Button button = (Button) rootView.findViewById(R.id.btn_quiz1);

@@ -11,7 +11,7 @@ public class PopUpExample extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.payment);
+        setContentView(R.layout.nusantara_payment_detail);
 
         Button buttonopen = findViewById(R.id.btndialogbot);
         buttonopen.setOnClickListener(new View.OnClickListener() {

@@ -17,7 +17,7 @@ public class PayAdapter extends ArrayAdapter<Pay> {
         Pay pay = getItem(position);
 
         if(convertView == null ) {
-            convertView = LayoutInflater. from(getContext()).inflate(R.layout.row_list, parent, false);
+            convertView = LayoutInflater. from(getContext()).inflate(R.layout.nusantara_payment_row_list, parent, false);
         }
 
         ImageView imgFoto = (ImageView) convertView.findViewById(R.id.imgFoto);

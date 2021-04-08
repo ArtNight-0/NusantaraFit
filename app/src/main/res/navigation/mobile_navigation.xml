@@ -9,24 +9,24 @@
         android:id="@+id/navigation_home"
         android:name="com.example.project_nusantarafit.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/nusantara_home_fragment" />
 
     <fragment
         android:id="@+id/navigation_quiz"
         android:name="com.example.project_nusantarafit.QuizFragment"
         android:label="@string/title_quiz"
-        tools:layout="@layout/quiz_fragment"/>
+        tools:layout="@layout/nusantara_quiz_fragment"/>
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.project_nusantarafit.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/profile_fragment" />
+        tools:layout="@layout/nusantara_profile_fragment" />
 
     <fragment
         android:id="@+id/navigation_camera"
         android:name="com.example.project_nusantarafit.CameraFragment"
         android:label="@string/title_camera"
-        tools:layout="@layout/camera_fragment" />
+        tools:layout="@layout/nusantara_camera_fragment" />
 
 </navigation>

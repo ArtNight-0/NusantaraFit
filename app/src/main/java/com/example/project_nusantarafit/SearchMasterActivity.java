@@ -7,6 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SearchMasterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.search_master1);
+        setContentView(R.layout.nusantara_item_search_master);
     }
 }

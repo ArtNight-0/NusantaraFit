@@ -14,7 +14,7 @@ public class BottomShettDialog extends BottomSheetDialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v  = inflater.inflate(R.layout.payment_popup, container,false);
+        View v  = inflater.inflate(R.layout.nusantara_payment_confirm, container,false);
 
         return  v;
     }

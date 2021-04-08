@@ -7,6 +7,6 @@ import android.os.Bundle;
 public class quiz1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quiz);
+        setContentView(R.layout.nusantara_quiz);
     }
 }

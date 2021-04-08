@@ -1,8 +1,6 @@
 package com.example.project_nusantarafit;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
@@ -13,7 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import static android.text.Html.fromHtml;
@@ -27,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.nusantara_a_login);
 
         TxtUsername = (EditText) findViewById(R.id.txtUsernameLog);
         TxtPassword = (EditText) findViewById(R.id.txtPasswordLog);

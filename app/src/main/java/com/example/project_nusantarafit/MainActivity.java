@@ -2,7 +2,6 @@ package com.example.project_nusantarafit;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,14 +10,12 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_fragment);
+        setContentView(R.layout.nusantara_home_fragment);
 //        ArrayList<Pay> arrayPay = new ArrayList<>();
 //        PayAdapter adapter = new PayAdapter(this, arrayPay);
 //        ListView listView = (ListView) findViewById(R.id.list);

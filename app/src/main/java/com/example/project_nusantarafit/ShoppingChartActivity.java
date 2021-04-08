@@ -8,7 +8,7 @@ public class ShoppingChartActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.shopping_chart);
+        setContentView(R.layout.nusantara_item_shopping_cart_acceptbuy);
     }
 
 }
