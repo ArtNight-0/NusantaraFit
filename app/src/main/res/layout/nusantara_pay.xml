@@ -181,8 +181,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="176dp"
-            android:layout_marginRight="176dp"
+            android:layout_marginEnd="145dp"
             android:background="@drawable/qr" />
 
         <ImageButton
@@ -263,6 +262,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints">
+
+<!--            <ListView-->
+<!--                android:id="@+id/listviewnya"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteX="-17dp"-->
+<!--                tools:layout_editor_absoluteY="395dp"-->
+<!--                android:layout_below="@+id/history">-->
+
+<!--            </ListView>-->
 
         </androidx.recyclerview.widget.RecyclerView>
 
