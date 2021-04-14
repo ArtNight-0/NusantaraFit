@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment {
     }
 
     private void goToAttract() {
-        Intent intent = new Intent(getActivity(), LoginActivity.class);
+        Intent intent = new Intent(getActivity(), AuthLoginActivity.class);
         startActivity(intent);
     }
 }

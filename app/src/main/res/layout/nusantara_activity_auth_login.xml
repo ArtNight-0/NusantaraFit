@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg"
-    tools:context=".LoginActivity"
+    tools:context=".AuthLoginActivity"
     android:orientation="vertical"
     android:gravity="center">
 
@@ -28,6 +28,7 @@
         android:drawablePadding="16dp"
         android:hint="Username"
         android:padding="16dp"
+        android:inputType="textPersonName"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="272dp" />
@@ -54,20 +55,29 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/rounded3"
-        android:text="Log in"
+        android:text="Login"
         android:textSize="50dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="415dp" />
 
     <TextView
-        android:id="@+id/tvDontHaveAccount"
+        android:id="@+id/tvRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't have an account ?"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="482dp" />
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="490dp" />
 
     <TextView
         android:layout_width="wrap_content"
