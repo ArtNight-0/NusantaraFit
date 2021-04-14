@@ -9,6 +9,7 @@ android {
         applicationId "com.example.project_nusantarafit"
         minSdkVersion 16
         targetSdkVersion 29
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
 
@@ -49,6 +50,8 @@ dependencies {
     //Firebase
     implementation platform('com.google.firebase:firebase-bom:26.8.0')
     implementation 'com.google.firebase:firebase-analytics'
+    //Multidex
+    implementation "androidx.multidex:multidex:1.0.3"
 }
 
 apply plugin: 'com.google.gms.google-services'
