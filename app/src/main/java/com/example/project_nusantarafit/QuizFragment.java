@@ -31,38 +31,6 @@ public class QuizFragment extends Fragment {
             startActivity(intent);
         }
         });
-
-        Button btn_quiz2 = (Button) rootView.findViewById(R.id.btn_quiz2);
-        btn_quiz2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-
-                Intent intent = new Intent(getActivity() ,quiz1.class);
-                startActivity(intent);
-            }
-        });
-
-        Button btn_quiz3 = (Button) rootView.findViewById(R.id.btn_quiz1);
-        btn_quiz3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-
-                Intent intent = new Intent(getActivity() ,quiz1.class);
-                startActivity(intent);
-            }
-        });
-
-        Button btn_quiz4 = (Button) rootView.findViewById(R.id.btn_quiz1);
-        btn_quiz4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-
-                Intent intent = new Intent(getActivity() ,quiz1.class);
-                startActivity(intent);
-            }
-        });
-
-
         return rootView;
     }
 }
