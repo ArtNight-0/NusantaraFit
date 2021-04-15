@@ -91,7 +91,6 @@
     android:orientation="vertical"
     android:gravity="center">
     <ImageButton
-        android:id="@+id/flashSale"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
@@ -111,7 +110,6 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/men"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
@@ -130,7 +128,6 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/woman"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
@@ -149,7 +146,6 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/free"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
@@ -168,7 +164,6 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/reward"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"

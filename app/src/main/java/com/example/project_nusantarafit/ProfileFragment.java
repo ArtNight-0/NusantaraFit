@@ -14,6 +14,11 @@ import androidx.fragment.app.Fragment;
 public class ProfileFragment extends Fragment {
 
     ImageButton BtnNusapay;
+    ImageButton BtnSetProfile;
+    ImageButton BtnVoucherMyList;
+    ImageButton BtnPointProfile;
+    ImageButton BtnCartProfile;
+//    ImageButton BtnChatRoom;
 
     public View onCreateView(@Nullable LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -27,8 +32,49 @@ public class ProfileFragment extends Fragment {
                 goToAttract();
             }
         });
+
+        ImageButton BtnSetProfile = (ImageButton)rootView.findViewById(R.id.setting_profile);
+        BtnSetProfile.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), SettingProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton BtnVoucherMyList = (ImageButton)rootView.findViewById(R.id.voucher_profile);
+        BtnVoucherMyList.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), VoucherMyList.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton BtnPointProfile = (ImageButton)rootView.findViewById(R.id.point_profile);
+        BtnPointProfile.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), PointProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton BtnCartProfile = (ImageButton)rootView.findViewById(R.id.cart_profile);
+        BtnCartProfile.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), ShoppingChartActivity.class);
+                startActivity(intent);
+            }
+        });
         return rootView;
     }
+
     private void goToAttract() {
         Intent intent = new Intent(getActivity(), NusaPayment.class);
         startActivity(intent);

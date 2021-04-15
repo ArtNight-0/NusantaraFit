@@ -22,7 +22,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/setting"
+            android:id="@+id/setting_profile"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="5dp"
@@ -33,7 +33,7 @@
             android:src="@drawable/settings" />
 
         <ImageButton
-            android:id="@+id/keranjang"
+            android:id="@+id/cart_profile"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="5dp"
@@ -85,7 +85,7 @@
                 android:textColor="#000000"
                 android:textSize="12dp" />
 
-            <EditText
+            <TextView
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded"
@@ -106,7 +106,7 @@
                     android:text="Pengikut"
                     android:textSize="12dp" />
 
-                <EditText
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -120,7 +120,7 @@
                     android:text="Mengikuti"
                     android:textSize="12dp" />
 
-                <EditText
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -143,6 +143,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/voucher_profile"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:background="@drawable/rounded2"
@@ -156,7 +157,7 @@
                 android:layout_marginTop="-30dp"
                 android:gravity="center"
                 android:text="Voucher"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -166,6 +167,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/point_profile"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_margin="10dp"
@@ -177,10 +179,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-30dp"
+                android:layout_marginTop="-35dp"
                 android:gravity="center"
                 android:text="Point"
-                android:textSize="20dp" />
+                android:textSize="19dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -201,11 +203,11 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="-30dp"
                 android:gravity="center"
                 android:text="NusaPay"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
 
     </LinearLayout>

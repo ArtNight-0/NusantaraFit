@@ -16,7 +16,7 @@
         android:background="@color/colorLayout">
 
         <ImageButton
-            android:id="@+id/previous"
+            android:id="@+id/previous_point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/previous"

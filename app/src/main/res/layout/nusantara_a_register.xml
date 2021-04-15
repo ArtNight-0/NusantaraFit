@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:background="@drawable/bg"
-    tools:context=".AuthRegisterActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:layout_width="150dp"
@@ -39,7 +39,6 @@
         android:background="@drawable/rounded"
         android:hint="Email"
         android:padding="16dp"
-        android:inputType="textEmailAddress"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="325dp" />
@@ -53,7 +52,6 @@
         android:background="@drawable/rounded"
         android:hint="Password"
         android:padding="16dp"
-        android:inputType="textPassword"
         app:passwordToggleEnabled="true"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="55dp"
@@ -68,7 +66,6 @@
         android:background="@drawable/rounded"
         android:hint="Confirm Password"
         android:padding="16dp"
-        android:inputType="textPassword"
         app:passwordToggleEnabled="true"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="55dp"

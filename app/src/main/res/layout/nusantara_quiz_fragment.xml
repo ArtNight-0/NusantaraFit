@@ -275,7 +275,6 @@
                     android:text="Guess the brand logo from Indonesia"
                     android:textSize="14dp" />
                 <Button
-                    android:id="@+id/btn_quiz2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/grroup26"
@@ -312,7 +311,6 @@
                     android:text="Matching the fashion image of a brand"
                     android:textSize="14dp" />
                 <Button
-                    android:id="@+id/btn_quiz3"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/grroup26"
@@ -348,7 +346,6 @@
                     android:text="Guess somewhere Indonesian brand"
                     android:textSize="14dp" />
                 <Button
-                    android:id="@+id/btn_quiz4"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/grroup26"
