@@ -35,6 +35,17 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(this);
     }
+
+    int counter = 0;
+
+    @Override
+    public void onBackPressed(){
+        counter++;
+        if (counter == 2 ){
+            super.onBackPressed();
+        }
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
         Fragment fragment = null;

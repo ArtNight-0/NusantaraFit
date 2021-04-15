@@ -23,8 +23,8 @@ public class HomeFragment extends Fragment {
                 container, false);
 
         //shopping chart
-        ImageButton button = (ImageButton) rootView.findViewById(R.id.sChart);
-        button.setOnClickListener(new View.OnClickListener() {
+        ImageButton chart = (ImageButton) rootView.findViewById(R.id.sChart);
+        chart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                goToAttract();
@@ -34,8 +34,8 @@ public class HomeFragment extends Fragment {
         });
 
         //chat
-        ImageButton button1 = (ImageButton) rootView.findViewById(R.id.chat);
-        button1.setOnClickListener(new View.OnClickListener() {
+        ImageButton chat = (ImageButton) rootView.findViewById(R.id.chat);
+        chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                goToAttract();
@@ -45,15 +45,66 @@ public class HomeFragment extends Fragment {
         });
 
         //search
-        SearchView searchView = (SearchView) rootView.findViewById(R.id.search);
-        searchView.setOnClickListener(new View.OnClickListener() {
+//        SearchView searchView = (SearchView) rootView.findViewById(R.id.search);
+//        searchView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                goToAttract();
+//                Intent intent = new Intent(getActivity(), SearchMasterActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        //flash sale
+        ImageButton flashSale = (ImageButton) rootView.findViewById(R.id.flashSale);
+        flashSale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                goToAttract();
-                Intent intent = new Intent(getActivity(), SearchMasterActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getActivity(), FlashSaleActivity.class);
+//                startActivity(intent);
             }
         });
+
+        //man sale
+        ImageButton man = (ImageButton) rootView.findViewById(R.id.men);
+        man.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(getActivity(), MenActivity.class);
+//                startActivity(intent);
+            }
+        });
+
+        //woman
+        ImageButton woman = (ImageButton) rootView.findViewById(R.id.woman);
+        woman.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(getActivity(), WomanActivity.class);
+//                startActivity(intent);
+            }
+        });
+
+        //Free Shipping
+        ImageButton free = (ImageButton) rootView.findViewById(R.id.free);
+        free.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(getActivity(), FreeShippingActivity.class);
+//                startActivity(intent);
+            }
+        });
+
+        //Reward
+        ImageButton reward = (ImageButton) rootView.findViewById(R.id.reward);
+        reward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(getActivity(), RewardActivity.class);
+//                startActivity(intent);
+            }
+        });
+
 
         return rootView;
 
@@ -63,8 +114,6 @@ public class HomeFragment extends Fragment {
 
     }
 
-    private void goToAttract() {
-        Intent intent = new Intent(getActivity(), AuthLoginActivity.class);
-        startActivity(intent);
-    }
+
+
 }
