@@ -56,7 +56,7 @@ public class HomeFragment extends Fragment {
 //        });
 
         //flash sale
-        ImageButton flashSale = (ImageButton) rootView.findViewById(R.id.flashSale);
+        ImageButton flashSale = (ImageButton) rootView.findViewById(R.id.flashsale);
         flashSale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

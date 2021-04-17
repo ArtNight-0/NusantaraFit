@@ -1,22 +1,62 @@
 package com.example.project_nusantarafit;
 
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+//import android.support.v4.app.Fragment;
 
 public class CameraFragment extends Fragment {
     ImageView imageView;
-    Button btn;
+    ImageButton btn;
 
     public View onCreateView(@Nullable LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+
+
+        View view ;
+        inflater = LayoutInflater.from(container.getContext());
+        view = inflater.inflate(R.layout.nusantara_camera_fragment,container,false);
+
+
+
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.nusantara_camera_fragment);
+
+        //Variabel
+//        imageView = btn.findViewById(R.id.image_view);
+        btn = btn.findViewById(R.id.btnOpen);
+
+        if (ContextCompat.checkSelfPermission(CameraFragment.this.getContext(),
+                Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(CameraFragment.this.getActivity(), new String[]{
+                            Manifest.permission.CAMERA
+                    },
+                    100);
+        }
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent, 100);
+            }
+        });
         return inflater.inflate(R.layout.nusantara_camera_fragment, null);
+
+    }
+
 
 //        imageView = imageView.findViewById(R.id.image_view);
 //        btn = btn.findViewById(R.id.btnOpen);
@@ -36,7 +76,7 @@ public class CameraFragment extends Fragment {
 //            }
 //        });
 
-    }
+}
 
 //    @Override
 //    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -47,5 +87,3 @@ public class CameraFragment extends Fragment {
 //            imageView.setImageBitmap(capture);
 //        }
 //    }
-
-}
