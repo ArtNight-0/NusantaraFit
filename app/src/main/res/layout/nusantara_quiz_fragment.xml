@@ -274,13 +274,17 @@
                     android:layout_marginTop="20dp"
                     android:text="Guess the brand logo from Indonesia"
                     android:textSize="14dp" />
+
                 <Button
+                    android:id="@+id/btn_quiz2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/grroup26"
                     android:layout_alignParentRight="true"
-                    android:layout_margin="15dp"
-                    android:layout_marginRight="0dp"/>
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/grroup26" />
                 <View
                     android:id="@+id/line2"
                     android:layout_width="match_parent"
@@ -310,13 +314,17 @@
                     android:layout_marginTop="20dp"
                     android:text="Matching the fashion image of a brand"
                     android:textSize="14dp" />
+
                 <Button
+                    android:id="@+id/btn_quiz3"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/grroup26"
                     android:layout_alignParentRight="true"
-                    android:layout_margin="15dp"
-                    android:layout_marginRight="0dp"/>
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="21dp"
+                    android:background="@drawable/grroup26" />
                 <View
                     android:id="@+id/line3"
                     android:layout_width="match_parent"
@@ -346,6 +354,7 @@
                     android:text="Guess somewhere Indonesian brand"
                     android:textSize="14dp" />
                 <Button
+                    android:id="@+id/btn_quiz4"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/grroup26"

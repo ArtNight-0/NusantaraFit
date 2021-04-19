@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.project_nusantarafit">
+    package="com.example.project_nusantarafit"
+    >
 
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
@@ -11,27 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".ShoppingChartActivity"/>
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".quiz"/>
+        <activity android:name=".SearchMasterActivity"/>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".IntroActivitySatu"/>
-        <activity android:name=".IntroActivityDua"/>
-        <activity android:name=".IntroActivityTiga"/>
-        <activity android:name=".ShoppingChartActivity" />
-        <activity android:name=".ChatActivity" />
-        <activity android:name=".quiz1" />
-        <activity android:name=".SearchMasterActivity" />
-        <activity android:name=".MainActivity"></activity>
         <activity
             android:name=".NusaPayment"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"/>
         <activity
             android:name=".Barcode"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"/>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@
     android:background="@drawable/backgorund2">
 
     <ImageButton
+        android:onClick="Kembali"
         android:id="@+id/btnprvs"
         android:layout_width="110dp"
         android:layout_height="40dp"
