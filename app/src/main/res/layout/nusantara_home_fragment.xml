@@ -99,6 +99,7 @@
         android:padding="5dp"
         android:scaleType="fitCenter"
         android:src="@drawable/flash_sale" />
+
     <TextView
         android:id="@+id/txtcoba"
         android:layout_width="wrap_content"
@@ -137,7 +138,8 @@
                 android:background="@drawable/rounded2"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/woman" />
+                android:src="@drawable/woman"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -156,7 +158,8 @@
                 android:background="@drawable/rounded2"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/free" />
+                android:src="@drawable/free"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

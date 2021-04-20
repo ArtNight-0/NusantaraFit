@@ -7,31 +7,39 @@
     android:layout_height="match_parent"
     android:id="@+id/layar1">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/LL1"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        tools:ignore="MissingConstraints"
-        android:background="@color/colorLayout">
+        android:background="@color/colorLayout"
+        tools:ignore="MissingConstraints">
 
         <ImageButton
             android:id="@+id/previous_point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/previous"
-            android:layout_marginTop="30dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.511"
+            tools:layout_editor_absoluteX="0dp" />
 
         <TextView
             android:id="@+id/rp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
             android:text="Reward Point"
             android:textColor="#fff"
             android:textSize="24dp"
             android:textStyle="bold"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="30dp"/>
+            app:layout_constraintBottom_toBottomOf="@+id/previous_point"
+            app:layout_constraintEnd_toStartOf="@+id/kupon"
+            app:layout_constraintStart_toEndOf="@+id/previous_point"
+            app:layout_constraintTop_toTopOf="@+id/kupon" />
 
         <ImageButton
             android:id="@+id/kupon"
@@ -41,18 +49,19 @@
             android:padding="10dp"
             android:scaleType="fitCenter"
             android:src="@drawable/kupon"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="35dp"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rp"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/LL2"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_below="@id/LL1"
         android:background="@color/colorLayout"
-        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="80dp">
@@ -61,19 +70,22 @@
             android:id="@+id/LLPOINT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
             android:background="@drawable/roundedgift"
             android:padding="5dp"
-            android:layout_marginLeft="110dp">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginLeft="20px"
                 android:text="25.000 Point"
                 android:textColor="@color/red"
                 android:textSize="16dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="20px"/>
+                android:textStyle="bold" />
 
             <ImageButton
                 android:layout_width="45dp"
@@ -87,27 +99,29 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/LLPOINT"
-            android:background="@drawable/roundedgift"
-            android:layout_marginLeft="155dp"
             android:layout_marginTop="15dp"
-            android:padding="5dp">
+            android:background="@drawable/roundedgift"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/LLPOINT"
+            app:layout_constraintStart_toStartOf="@+id/LLPOINT"
+            app:layout_constraintTop_toBottomOf="@+id/LLPOINT">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:padding="5dp"
                 android:text="GET IT"
                 android:textColor="@color/red"
                 android:textSize="16dp"
-                android:textStyle="bold"
-                android:padding="5dp"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
 <!--        android:id="@+id/layar2"-->
@@ -134,7 +148,7 @@
 <!--            app:layout_constraintStart_toStartOf="parent"-->
 <!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/hari"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -238,9 +252,9 @@
         </LinearLayout>
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/day"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -372,7 +386,7 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout3"
@@ -383,9 +397,10 @@
         android:orientation="horizontal"
         android:rowCount="4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="318dp">
+        tools:layout_editor_absoluteY="317dp">
 
         <TextView
             android:id="@+id/history"

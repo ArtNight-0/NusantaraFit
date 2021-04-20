@@ -132,7 +132,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="150dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -222,12 +222,41 @@
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded3"
-            android:elevation="10dp">
+            android:elevation="10dp"
+            android:orientation="vertical">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/pf_recycler1"
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/pf_recycler1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp" />-->
+            <Button
+                android:id="@+id/myorder"
                 android:layout_width="match_parent"
-                android:layout_height="150dp" />
+                android:layout_height="45dp"
+                android:text="My order"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/intheprocess"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="In the process"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/ontheway"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="On the way"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/review"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Review"
+                android:background="@color/white"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -235,12 +264,40 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded3"
-            android:elevation="10dp">
+            android:elevation="10dp"
+            android:orientation="vertical">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/pf_recycler2"
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/pf_recycler2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"/>-->
+            <Button
+                android:id="@+id/wishlist"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"/>
+                android:layout_height="45dp"
+                android:text="In the process"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="grid"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/cancelation"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Cancellation"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Logout"
+                android:background="@color/white"/>
         </LinearLayout>
 
 
