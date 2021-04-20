@@ -33,13 +33,13 @@
         <View
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:background="@drawable/curva2"
+            android:background="@drawable/curva1"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"/>
         <View
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:background="@drawable/curva1"
+            android:background="@drawable/curva3"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"/>
     </LinearLayout>
@@ -64,6 +64,7 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/curva3"/>
         <Button
+            android:id="@+id/next"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_below="@+id/text1"

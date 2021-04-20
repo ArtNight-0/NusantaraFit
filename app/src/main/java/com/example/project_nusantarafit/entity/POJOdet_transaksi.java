@@ -1,4 +1,4 @@
-package com.example.backend_database;
+package com.example.project_nusantarafit.entity;
 
 public class POJOdet_transaksi {
     public int id_det_transaksi;

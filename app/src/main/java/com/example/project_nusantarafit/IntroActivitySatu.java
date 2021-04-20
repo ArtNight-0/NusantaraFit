@@ -17,6 +17,7 @@ public class IntroActivitySatu extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.nusantara_intro_1);
 
         nextBtn = findViewById(R.id.next);
         nextBtn.setOnClickListener(new View.OnClickListener() {

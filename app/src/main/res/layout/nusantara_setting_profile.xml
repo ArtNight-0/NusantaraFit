@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <ImageView
-        tools:ignore="MissingConstraints"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/logo"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="72dp"/>
+        tools:layout_editor_absoluteY="72dp" />
 
     <Button
         android:id="@+id/button_edit_profile"
@@ -24,7 +24,7 @@
         android:textAllCaps="false"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="215dp"/>
+        tools:layout_editor_absoluteY="215dp" />
 
     <ImageButton
         android:id="@+id/btnChecklist"
@@ -39,14 +39,14 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="255dp"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="255dp" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        android:padding="20dp">
+        android:padding="20dp"
+        tools:ignore="MissingConstraints">
 
     </androidx.cardview.widget.CardView>
 
@@ -54,24 +54,26 @@
         android:id="@+id/group1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:padding="10dp"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="254dp"
         tools:ignore="MissingConstraints"
-        android:background="@color/white">
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="254dp">
 
         <TextView
             android:id="@+id/txtNamaPelanggan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name" />
+            android:text="Name"
+            android:textColor="@color/colorBlack"/>
 
         <TextView
             android:id="@+id/txtNamaPelanggan2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="250dp"
-            android:text="nusantarafit" />
+            android:text="nusantarafit"
+            android:textColor="@color/colorBlack"/>
 
         <ImageButton
             android:id="@+id/imgBtnNama"
@@ -98,14 +100,16 @@
             android:id="@+id/txtUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Username" />
+            android:text="Username"
+            android:textColor="@color/colorBlack"/>
 
         <TextView
             android:id="@+id/txtUsername2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="205dp"
-            android:text="nusantaraoutfit" />
+            android:text="nusantaraoutfit"
+            android:textColor="@color/colorBlack"/>
 
         <ImageButton
             android:id="@+id/imgBtnUsername"
@@ -124,31 +128,33 @@
         android:layout_height="10dp"
         android:background="@drawable/shadow"
         android:elevation="0px"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="335dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="335dp" />
 
     <LinearLayout
         android:id="@+id/group3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:padding="10dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="360dp"
-        android:padding="10dp">
+        tools:layout_editor_absoluteY="360dp">
 
         <TextView
             android:id="@+id/txtGender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gender" />
+            android:text="Gender"
+            android:textColor="@color/colorBlack"/>
 
         <TextView
             android:id="@+id/txtGender2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="293dp"
-            android:text="Pria" />
+            android:text="Pria"
+            android:textColor="@color/colorBlack"/>
 
         <ImageButton
             android:id="@+id/imgBtnGender"
@@ -167,22 +173,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:padding="10dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="400dp"
-        android:padding="10dp">
+        tools:layout_editor_absoluteY="400dp">
 
         <TextView
             android:id="@+id/txtDoB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date of Birth" />
+            android:text="Date of Birth"
+            android:textColor="@color/colorBlack"/>
 
         <TextView
             android:id="@+id/txtDoB2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="213dp"
-            android:text="31-05-2020" />
+            android:text="31-05-2020"
+            android:textColor="@color/colorBlack"/>
 
         <ImageButton
             android:id="@+id/imgBtnBoD"
@@ -201,22 +209,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:padding="10dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="440dp"
-        android:padding="10dp">
+        tools:layout_editor_absoluteY="440dp">
 
         <TextView
             android:id="@+id/txtHP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date of Birth" />
+            android:text="Phone Number"
+            android:textColor="@color/colorBlack"/>
 
         <TextView
             android:id="@+id/txtHP2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="197dp"
-            android:text="08999498613" />
+            android:text="08999498613"
+            android:textColor="@color/colorBlack"/>
 
         <ImageButton
             android:id="@+id/imgBtnHP"
@@ -235,31 +245,33 @@
         android:layout_height="10dp"
         android:background="@drawable/shadow"
         android:elevation="0px"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="475dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="475dp" />
 
     <LinearLayout
         android:id="@+id/group6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:padding="10dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="500dp"
-        android:padding="10dp">
+        tools:layout_editor_absoluteY="500dp">
 
         <TextView
             android:id="@+id/txtEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date of Birth" />
+            android:text="Email"
+            android:textColor="@color/colorBlack"/>
 
         <TextView
             android:id="@+id/txtEmail2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:text="nusantaraoutfit@gmail.com" />
+            android:text="nusantaraoutfit@gmail.com"
+            android:textColor="@color/colorBlack"/>
 
         <ImageButton
             android:id="@+id/imgBtnEmail"
@@ -278,22 +290,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:padding="10dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="540dp"
-        android:padding="10dp">
+        tools:layout_editor_absoluteY="540dp">
 
         <TextView
             android:id="@+id/txtPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Change Password" />
+            android:text="Change Password"
+            android:textColor="@color/colorBlack"/>
 
         <TextView
             android:id="@+id/txtPass2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:text="" />
+            android:text=""
+            android:textColor="@color/colorBlack"/>
 
         <ImageButton
             android:id="@+id/imgBtnPass"
@@ -312,8 +326,8 @@
         android:layout_height="10dp"
         android:background="@drawable/shadow"
         android:elevation="0px"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="580dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="580dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

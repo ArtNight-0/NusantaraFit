@@ -28,7 +28,7 @@ public class AuthForgotPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nusantara_activity_auth_forgot_password);
 
-        txtEmail = findViewById(R.id.txtEmail);
+        txtEmail = findViewById(R.id.txtEmailForgot);
         progressBar = findViewById(R.id.progressBar);
         auth = FirebaseAuth.getInstance();
 
@@ -51,7 +51,7 @@ public class AuthForgotPasswordActivity extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
 
                                 if (task.isSuccessful()) {
-                                    startActivity(new Intent(getApplicationContext(), AuthForgotPasswordActivity.class));
+                                    startActivity(new Intent(getApplicationContext(), AuthForgotPasswordConfirm.class));
                                     finish();
                                 } else {
                                     Toast.makeText(getApplicationContext(), "Failed to change password", Toast.LENGTH_LONG).show();

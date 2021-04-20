@@ -1,4 +1,4 @@
-package com.example.backend_database;
+package com.example.project_nusantarafit.entity;
 
 import org.w3c.dom.Text;
 

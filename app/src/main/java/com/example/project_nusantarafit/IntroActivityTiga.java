@@ -17,12 +17,13 @@ public class IntroActivityTiga extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.nusantara_intro_3);
 
         nextBtn = findViewById(R.id.next);
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), AuthRegisterActivity.class));
+                startActivity(new Intent(getApplicationContext(), AuthLoginActivity.class));
                 finish();
             }
         });

@@ -1,25 +1,20 @@
 package com.example.project_nusantarafit;
 
-import android.accounts.Account;
-import android.content.ContentValues;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
-import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.project_nusantarafit.entity.UserNF;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -39,7 +34,7 @@ public class AuthRegisterActivity extends AppCompatActivity {
 
     private TextView tvBackToLogin;
     private EditText TxtName,TxtEmail, TxtPassword, TxtConPassword;
-    private ImageButton BtnRegister;
+    private Button BtnRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,12 +50,12 @@ public class AuthRegisterActivity extends AppCompatActivity {
         TxtPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
         TxtConPassword = (EditText) findViewById(R.id.txtConPasswordReg);
         TxtConPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-        BtnRegister = (ImageButton) findViewById(R.id.btnRegister);
+        BtnRegister = (Button) findViewById(R.id.btnRegister);
         BtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 register();
-                new Intent(getApplicationContext(), AuthLoginActivity.class);
+                new Intent(getApplicationContext(), MainActivity.class);
             }
         });
         tvBackToLogin = (TextView) findViewById(R.id.tvBackToLogin);
@@ -68,6 +63,7 @@ public class AuthRegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), AuthLoginActivity.class));
+                finish();
             }
         });
     }

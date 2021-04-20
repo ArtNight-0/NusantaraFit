@@ -1,4 +1,4 @@
-package com.example.backend_database;
+package com.example.project_nusantarafit.entity;
 
 public class POJOseller {
     public int id_seller;
