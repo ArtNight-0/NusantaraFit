@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/backgorund"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ChatActivity">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -33,51 +33,21 @@
             android:background="@drawable/rounded"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="206dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
-            android:text="All"
-            android:textAlignment="center"
-            android:textSize="24dp" />
-
-        <TextView
-            android:layout_width="206dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:text="Unread"
-            android:textAlignment="center"
-            android:textSize="24dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="500dp">
- //diganti jadi recyclerview
-<!--        <ImageView-->
-<!--            android:id="@+id/imgorder"-->
-<!--            android:layout_width="120dp"-->
-<!--            android:layout_height="120dp"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:src="@drawable/comment" />-->
-        <androidx.recyclerview.widget.RecyclerView
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#FFC107"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#FFC107" />
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:layout_below="@+id/imgorder"-->
-<!--            android:text="No chat history"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textSize="28dp" />-->
-    </LinearLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

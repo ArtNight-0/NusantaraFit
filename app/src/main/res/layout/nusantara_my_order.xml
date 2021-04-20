@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgorund"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".OrderActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -67,57 +68,23 @@
         </RelativeLayout>
     </RelativeLayout>
 
-    <LinearLayout
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_marginLeft="5dp"
-            android:layout_width="103dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:text="In the process"
-            android:textAlignment="center"/>
-        <TextView
-            android:layout_width="103dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:text="On the way"
-            android:textAlignment="center"/>
-        <TextView
-            android:layout_width="103dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:text="Return of goods"
-            android:textAlignment="center"/>
-        <TextView
-            android:layout_width="103dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:text="cancellation"
-            android:textAlignment="center"/>
-    </LinearLayout>
-    <LinearLayout
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#FFC107"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#FFC107" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-
-        </androidx.recyclerview.widget.RecyclerView>
-
-
-
-
-
-
-    </LinearLayout>
-
-
-<!--    <RelativeLayout-->
+    <!--    <RelativeLayout-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="500dp">-->
 <!--        <ImageView-->

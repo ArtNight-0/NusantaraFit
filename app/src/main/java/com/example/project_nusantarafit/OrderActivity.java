@@ -1,37 +1,32 @@
 package com.example.project_nusantarafit;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
+import android.os.Bundle;
+import android.widget.Toolbar;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class ChatActivity extends AppCompatActivity {
+public class OrderActivity
+        extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
-    RoomchatViewPager roomchatViewPager;
+    MyorderViewPager myorderViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nusantara_chatroom_list);
+        setContentView(R.layout.nusantara_my_order);
 
         viewPager = findViewById(R.id.view_pager);
         tabLayout = findViewById(R.id.tabs);
 
-        roomchatViewPager = new RoomchatViewPager(
+        myorderViewPager = new MyorderViewPager(
                 getSupportFragmentManager());
-        viewPager.setAdapter(roomchatViewPager);
+        viewPager.setAdapter(myorderViewPager);
 
         // It is used to join TabLayout with ViewPager.
         tabLayout.setupWithViewPager(viewPager);
     }
-
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.nusantara_chatroom_list);
-//    }
-
 }
