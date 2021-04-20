@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 fragment = new QuizFragment();
                 break;
             case R.id.navigation_camera:
-                fragment = new CameraFragment();
+//                fragment = new CameraFragment();
                 break;
             case R.id.navigation_profile:
                 fragment = new ProfileFragment();

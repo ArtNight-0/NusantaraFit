@@ -6,7 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.SearchView;
+import android.app.SearchManager;
+import androidx.appcompat.widget.SearchView;
+import android.widget.SearchView.OnQueryTextListener;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -45,15 +47,15 @@ public class HomeFragment extends Fragment {
         });
 
         //search
-//        SearchView searchView = (SearchView) rootView.findViewById(R.id.search);
-//        searchView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                goToAttract();
-//                Intent intent = new Intent(getActivity(), SearchMasterActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        SearchView searchView = (SearchView) rootView.findViewById(R.id.search);
+        searchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                goToAttract();
+                Intent intent = new Intent(getActivity(), SearchMasterActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //flash sale
         ImageButton flashSale = (ImageButton) rootView.findViewById(R.id.flashsale);

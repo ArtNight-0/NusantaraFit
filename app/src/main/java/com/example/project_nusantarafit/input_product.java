@@ -9,6 +9,6 @@ public class input_product extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.input_product);
+//        setContentView(R.layout.input_product);
     }
 }
