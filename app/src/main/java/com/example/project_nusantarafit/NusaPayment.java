@@ -1,5 +1,6 @@
 package com.example.project_nusantarafit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,5 +33,9 @@ public class NusaPayment extends AppCompatActivity {
 //
 //        pay = new Pay(R.drawable.logo, "Transfer", "11.12.21", "+ 100.000.000", "Failed");
 //        adapter.add(pay);
+    }
+    public void PreviousNP(View view) {
+        Intent intent = new Intent(this, ProfileFragment.class);
+        startActivity(intent);
     }
 }
