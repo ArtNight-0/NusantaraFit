@@ -20,6 +20,7 @@
             android:layout_height="match_parent">
 
             <ImageButton
+                android:onClick="PreviousShoppingCart"
                 android:id="@+id/previous_shoppingcart"
                 android:layout_width="100dp"
                 android:layout_height="30dp"
@@ -29,7 +30,8 @@
                 android:text="Previous"
                 android:textColor="#000"
                 android:textSize="10dp"
-                app:backgroundTint="#fff" />
+                app:backgroundTint="#fff"
+                tools:ignore="OnClick" />
 
             <ImageButton
                 android:layout_width="43dp"
