@@ -1,0 +1,95 @@
+Index: app/src/main/java/com/example/project_nusantarafit/SplashScreen.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.project_nusantarafit;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.os.Handler;\r\nimport android.util.Log;\r\nimport android.view.View;\r\nimport android.widget.ProgressBar;\r\nimport android.widget.Toast;\r\n\r\nimport com.google.firebase.auth.FirebaseAuth;\r\nimport com.google.firebase.auth.FirebaseUser;\r\nimport com.google.firebase.database.DataSnapshot;\r\nimport com.google.firebase.database.DatabaseError;\r\nimport com.google.firebase.database.DatabaseReference;\r\nimport com.google.firebase.database.FirebaseDatabase;\r\nimport com.google.firebase.database.ValueEventListener;\r\n\r\npublic class SplashScreen extends AppCompatActivity {\r\n\r\n    private FirebaseAuth mAuth;\r\n    private FirebaseAuth.AuthStateListener listener;\r\n    private FirebaseDatabase database;\r\n    private DatabaseReference reference;\r\n    private ProgressBar progressBar;\r\n    private String getUserID;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.nusantara_activity_splash_screen);\r\n\r\n        mAuth = FirebaseAuth.getInstance();\r\n\r\n        database = FirebaseDatabase.getInstance();\r\n        reference = database.getReference();\r\n\r\n        progressBar = findViewById(R.id.progressBar);\r\n        progressBar.setVisibility(View.VISIBLE);\r\n\r\n        listener = new FirebaseAuth.AuthStateListener() {\r\n            @Override\r\n            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {\r\n                FirebaseUser user = firebaseAuth.getCurrentUser();\r\n\r\n                if (user != null) {\r\n                    getUserID = user.getUid();\r\n                    reference.child(\"user\").child(getUserID).addValueEventListener(new ValueEventListener() {\r\n                        @Override\r\n                        public void onDataChange(@NonNull DataSnapshot snapshot) {\r\n                            progressBar.setVisibility(View.GONE);\r\n                            UserNF pengguna = snapshot.getValue(UserNF.class);\r\n\r\n                            if (pengguna != null) {\r\n                                startActivity(new Intent(getApplicationContext(), MainActivity.class));\r\n                            } else {\r\n                                firebaseAuth.signOut();\r\n                            }\r\n                        }\r\n\r\n                        @Override\r\n                        public void onCancelled(@NonNull DatabaseError error) {\r\n                            Toast.makeText(getApplicationContext(), \"Data Gagal dimuat\", Toast.LENGTH_LONG).show();\r\n                            Log.e(\"MyData\", error.getDetails() + \" \" + error.getMessage());\r\n                        }\r\n                    });\r\n                } else {\r\n                    final Handler handler = new Handler();\r\n                    handler.postDelayed(new Runnable() {\r\n                        @Override\r\n                        public void run() {\r\n                            startActivity(new Intent(getApplicationContext(), IntroActivitySatu.class));\r\n                            finish();\r\n                        }\r\n                    }, 2000L);\r\n                }\r\n            }\r\n        };\r\n    }\r\n\r\n    @Override\r\n    protected void onStart() {\r\n        super.onStart();\r\n        mAuth.addAuthStateListener(listener);\r\n    }\r\n\r\n    @Override\r\n    protected void onStop() {\r\n        super.onStop();\r\n        if (listener != null) {\r\n            mAuth.removeAuthStateListener(listener);\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/SplashScreen.java	(revision b743acd9d767f14f22a50e772bf5f149fe57593c)
++++ app/src/main/java/com/example/project_nusantarafit/SplashScreen.java	(date 1618804763837)
+@@ -34,11 +34,10 @@
+         setContentView(R.layout.nusantara_activity_splash_screen);
+ 
+         mAuth = FirebaseAuth.getInstance();
+-
+         database = FirebaseDatabase.getInstance();
+         reference = database.getReference();
+ 
+-        progressBar = findViewById(R.id.progressBar);
++        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+         progressBar.setVisibility(View.VISIBLE);
+ 
+         listener = new FirebaseAuth.AuthStateListener() {
+Index: app/src/main/res/drawable/ic_add.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_add.xml	(date 1618813692691)
++++ app/src/main/res/drawable/ic_add.xml	(date 1618813692691)
+@@ -0,0 +1,10 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24"
++    android:viewportHeight="24"
++    android:tint="?attr/colorControlNormal">
++  <path
++      android:fillColor="@android:color/white"
++      android:pathData="M19,13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
++</vector>
+Index: app/src/main/res/drawable/barround.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/barround.xml	(date 1618815789669)
++++ app/src/main/res/drawable/barround.xml	(date 1618815789669)
+@@ -0,0 +1,11 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="338dp"
++    android:height="145dp"
++    android:viewportWidth="338"
++    android:viewportHeight="145">
++  <path
++      android:pathData="M338,8C338,3.582 334.418,0 330,0H8C3.582,0 0,3.582 0,8V112.319C0,116.737 3.582,120.319 8,120.319H281.159C285.517,120.319 288.947,123.891 290.333,128.023C293.646,137.903 302.767,145 313.5,145C326.863,145 337.727,133.998 337.995,120.322C337.995,120.32 337.996,120.319 337.997,120.319V120.319C337.999,120.319 338,120.318 338,120.317V119.805V8Z"
++      android:fillColor="#FFC107"
++      android:fillAlpha="0.8"
++      android:fillType="evenOdd"/>
++</vector>
+Index: app/src/main/res/drawable/icon_close.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/icon_close.xml	(date 1618812889952)
++++ app/src/main/res/drawable/icon_close.xml	(date 1618812889952)
+@@ -0,0 +1,10 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24"
++    android:viewportHeight="24"
++    android:tint="?attr/colorControlNormal">
++  <path
++      android:fillColor="@android:color/white"
++      android:pathData="M19,6.41L17.59,5 12,10.59 6.41,5 5,6.41 10.59,12 5,17.59 6.41,19 12,13.41 17.59,19 19,17.59 13.41,12z"/>
++</vector>
+Index: app/src/main/res/drawable/ic_check.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/ic_check.xml	(date 1618812925833)
++++ app/src/main/res/drawable/ic_check.xml	(date 1618812925833)
+@@ -0,0 +1,10 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24"
++    android:viewportHeight="24"
++    android:tint="?attr/colorControlNormal">
++  <path
++      android:fillColor="@android:color/white"
++      android:pathData="M9,16.17L4.83,12l-1.42,1.41L9,19 21,7l-1.41,-1.41z"/>
++</vector>

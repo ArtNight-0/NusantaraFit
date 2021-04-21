@@ -1,0 +1,715 @@
+Index: app/src/main/res/layout/item_mord.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:orientation=\"vertical\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <LinearLayout\r\n        android:orientation=\"vertical\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"240dp\"\r\n        android:layout_margin=\"20dp\"\r\n        android:background=\"@drawable/rounded3\"\r\n        android:elevation=\"10dp\">\r\n        <RelativeLayout\r\n            android:elevation=\"10dp\"\r\n            android:background=\"@drawable/sbgitemmord\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\">\r\n\r\n                <TextView\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"ArtNight\"\r\n                    android:layout_marginTop=\"5dp\"\r\n                    android:layout_marginLeft=\"60dp\"/>\r\n\r\n\r\n                <ImageView\r\n                    android:layout_marginLeft=\"15dp\"\r\n                    android:background=\"@drawable/people\"\r\n                    android:layout_alignParentTop=\"true\"\r\n                    android:layout_width=\"30dp\"\r\n                    android:layout_height=\"30dp\"/>\r\n\r\n\r\n        </RelativeLayout>\r\n        <RelativeLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"80dp\"\r\n            android:elevation=\"20dp\">\r\n\r\n            <ImageView\r\n                android:layout_width=\"45dp\"\r\n                android:layout_height=\"40dp\"\r\n                android:layout_margin=\"10dp\"\r\n                android:background=\"@drawable/icon_hoodie\"/>\r\n\r\n            <TextView\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginLeft=\"65dp\"\r\n                android:layout_marginTop=\"10dp\"\r\n                android:text=\"Hoodie Oni Mask\"\r\n                android:textSize=\"14dp\" />\r\n            <TextView\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginLeft=\"65dp\"\r\n                android:text=\"1x\"\r\n                android:layout_alignParentBottom=\"true\"/>\r\n            <TextView\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Rp.150.000\"\r\n                android:textSize=\"20dp\"\r\n                android:layout_alignParentRight=\"true\"\r\n                android:layout_margin=\"10dp\"\r\n\r\n                android:layout_marginRight=\"0dp\"/>\r\n\r\n        </RelativeLayout>\r\n\r\n</LinearLayout>\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/item_mord.xml	(revision 6795c58cc983c5563239163acee57b7fdbf170d4)
++++ app/src/main/res/layout/item_mord.xml	(date 1616852428811)
+@@ -9,8 +9,8 @@
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+-        android:layout_height="240dp"
+-        android:layout_margin="20dp"
++        android:layout_height="140dp"
++        android:layout_margin="10dp"
+         android:background="@drawable/rounded3"
+         android:elevation="10dp">
+         <RelativeLayout
+@@ -20,6 +20,7 @@
+             android:layout_height="wrap_content">
+ 
+                 <TextView
++                    android:textColor="@color/black"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="ArtNight"
+@@ -28,8 +29,10 @@
+ 
+ 
+                 <ImageView
++                    android:layout_marginVertical="2dp"
++                    android:scaleType="fitCenter"
+                     android:layout_marginLeft="15dp"
+-                    android:background="@drawable/people"
++                    android:background="@drawable/cwok"
+                     android:layout_alignParentTop="true"
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"/>
+@@ -42,32 +45,34 @@
+             android:elevation="20dp">
+ 
+             <ImageView
+-                android:layout_width="45dp"
+-                android:layout_height="40dp"
++                android:layout_width="60dp"
++                android:layout_height="80dp"
+                 android:layout_margin="10dp"
+                 android:background="@drawable/icon_hoodie"/>
+ 
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+-                android:layout_marginLeft="65dp"
++                android:layout_marginLeft="75dp"
+                 android:layout_marginTop="10dp"
+                 android:text="Hoodie Oni Mask"
+-                android:textSize="14dp" />
++                android:textColor="@color/black"
++                android:textSize="12dp" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+-                android:layout_marginLeft="65dp"
+-                android:text="1x"
++                android:layout_marginLeft="75dp"
++                android:text="x1"
+                 android:layout_alignParentBottom="true"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Rp.150.000"
+                 android:textSize="20dp"
++                android:textStyle="bold"
++                android:textColor="@color/black"
+                 android:layout_alignParentRight="true"
+                 android:layout_margin="10dp"
+-
+                 android:layout_marginRight="0dp"/>
+ 
+         </RelativeLayout>
+Index: app/src/main/res/layout/item_point.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/item_point.xml	(date 1616859641033)
++++ app/src/main/res/layout/item_point.xml	(date 1616859641033)
+@@ -0,0 +1,63 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent">
++
++    <androidx.cardview.widget.CardView
++        android:background="@drawable/rounded2"
++        android:layout_width="match_parent"
++        android:layout_height="100dp"
++        android:layout_margin="8dp">
++
++        <LinearLayout
++            android:orientation="horizontal"
++            android:layout_width="match_parent"
++            android:layout_height="match_parent"
++            android:background="@drawable/rounded2"
++            android:backgroundTint="@color/white">
++
++            <LinearLayout
++                android:layout_width="100dp"
++                android:layout_height="100dp">
++
++                <ImageView
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_gravity="center"
++                    android:background="@drawable/rounded2"
++                    android:backgroundTint="@color/Primaryorange"
++                    android:src="@drawable/logo" />
++
++            </LinearLayout>
++
++            <LinearLayout
++                android:layout_width="200dp"
++                android:layout_height="match_parent"
++                android:padding="8dp"
++                android:orientation="vertical">
++
++                <TextView
++                    android:layout_margin="5dp"
++                    android:textColor="@color/black"
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:text="Quiz" />
++
++                <TextView
++                    android:layout_margin="5dp"
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:text="11.12.2021" />
++            </LinearLayout>
++            <Button
++                android:layout_gravity="center_vertical"
++
++                android:text="+2500"
++                android:layout_width="wrap_content"
++                android:layout_height="20dp"
++                android:background="@drawable/rounded2"
++                android:backgroundTint="#04BA0C"/>
++        </LinearLayout>
++    </androidx.cardview.widget.CardView>
++
++</LinearLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/project_nusantarafit/POJOuser.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/POJOuser.java	(date 1617680648317)
++++ app/src/main/java/com/example/project_nusantarafit/POJOuser.java	(date 1617680648317)
+@@ -0,0 +1,58 @@
++package com.example.backend_database;
++
++public class POJOuser {
++    public int id_user;
++    public String nama_user;
++    public String alamat;
++    public String no_telp;
++    public String email_user;
++    public String pass_user;
++
++    public int getId_user() {
++        return id_user;
++    }
++
++    public void setId_user(int id_user) {
++        this.id_user = id_user;
++    }
++
++    public String getNama_user() {
++        return nama_user;
++    }
++
++    public void setNama_user(String nama_user) {
++        this.nama_user = nama_user;
++    }
++
++    public String getAlamat() {
++        return alamat;
++    }
++
++    public void setAlamat(String alamat) {
++        this.alamat = alamat;
++    }
++
++    public String getNo_telp() {
++        return no_telp;
++    }
++
++    public void setNo_telp(String no_telp) {
++        this.no_telp = no_telp;
++    }
++
++    public String getEmail_user() {
++        return email_user;
++    }
++
++    public void setEmail_user(String email_user) {
++        this.email_user = email_user;
++    }
++
++    public String getPass_user() {
++        return pass_user;
++    }
++
++    public void setPass_user(String pass_user) {
++        this.pass_user = pass_user;
++    }
++}
+Index: app/src/main/java/com/example/project_nusantarafit/POJOkategori.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/POJOkategori.java	(date 1617680621747)
++++ app/src/main/java/com/example/project_nusantarafit/POJOkategori.java	(date 1617680621747)
+@@ -0,0 +1,31 @@
++package com.example.backend_database;
++
++public class POJOkategori {
++    public int id_kategor;
++    public String nama_kategori;
++    public int id_produk;
++
++    public int getId_kategor() {
++        return id_kategor;
++    }
++
++    public void setId_kategor(int id_kategor) {
++        this.id_kategor = id_kategor;
++    }
++
++    public String getNama_kategori() {
++        return nama_kategori;
++    }
++
++    public void setNama_kategori(String nama_kategori) {
++        this.nama_kategori = nama_kategori;
++    }
++
++    public int getId_produk() {
++        return id_produk;
++    }
++
++    public void setId_produk(int id_produk) {
++        this.id_produk = id_produk;
++    }
++}
+Index: app/src/main/java/com/example/project_nusantarafit/POJOkonfirmasi.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/POJOkonfirmasi.java	(date 1617680631090)
++++ app/src/main/java/com/example/project_nusantarafit/POJOkonfirmasi.java	(date 1617680631090)
+@@ -0,0 +1,80 @@
++package com.example.backend_database;
++
++import java.util.Date;
++
++public class POJOkonfirmasi {
++    public int id_konfirmasi;
++    public int id_transaksi;
++    public Date tgl_konfirmasi;
++    public String metode_pembayaran;
++    public String customer_bank;
++    public String customer_name;
++    public int customer_rek;
++
++    public int getId_konfirmasi() {
++        return id_konfirmasi;
++    }
++
++    public void setId_konfirmasi(int id_konfirmasi) {
++        this.id_konfirmasi = id_konfirmasi;
++    }
++
++    public int getId_transaksi() {
++        return id_transaksi;
++    }
++
++    public void setId_transaksi(int id_transaksi) {
++        this.id_transaksi = id_transaksi;
++    }
++
++    public Date getTgl_konfirmasi() {
++        return tgl_konfirmasi;
++    }
++
++    public void setTgl_konfirmasi(Date tgl_konfirmasi) {
++        this.tgl_konfirmasi = tgl_konfirmasi;
++    }
++
++    public String getMetode_pembayaran() {
++        return metode_pembayaran;
++    }
++
++    public void setMetode_pembayaran(String metode_pembayaran) {
++        this.metode_pembayaran = metode_pembayaran;
++    }
++
++    public String getCustomer_bank() {
++        return customer_bank;
++    }
++
++    public void setCustomer_bank(String customer_bank) {
++        this.customer_bank = customer_bank;
++    }
++
++    public String getCustomer_name() {
++        return customer_name;
++    }
++
++    public void setCustomer_name(String customer_name) {
++        this.customer_name = customer_name;
++    }
++
++    public int getCustomer_rek() {
++        return customer_rek;
++    }
++
++    public void setCustomer_rek(int customer_rek) {
++        this.customer_rek = customer_rek;
++    }
++
++    public int getRek_konfirmasi() {
++        return rek_konfirmasi;
++    }
++
++    public void setRek_konfirmasi(int rek_konfirmasi) {
++        this.rek_konfirmasi = rek_konfirmasi;
++    }
++
++    public int rek_konfirmasi;
++
++}
+Index: app/src/main/java/com/example/project_nusantarafit/POJOseller.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/POJOseller.java	(date 1617680640614)
++++ app/src/main/java/com/example/project_nusantarafit/POJOseller.java	(date 1617680640614)
+@@ -0,0 +1,31 @@
++package com.example.backend_database;
++
++public class POJOseller {
++    public int id_seller;
++    public String nama_toko;
++    public String alamat;
++
++    public int getId_seller() {
++        return id_seller;
++    }
++
++    public void setId_seller(int id_seller) {
++        this.id_seller = id_seller;
++    }
++
++    public String getNama_toko() {
++        return nama_toko;
++    }
++
++    public void setNama_toko(String nama_toko) {
++        this.nama_toko = nama_toko;
++    }
++
++    public String getAlamat() {
++        return alamat;
++    }
++
++    public void setAlamat(String alamat) {
++        this.alamat = alamat;
++    }
++}
+Index: app/src/main/java/com/example/project_nusantarafit/POJOproduk.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/POJOproduk.java	(date 1617680637263)
++++ app/src/main/java/com/example/project_nusantarafit/POJOproduk.java	(date 1617680637263)
+@@ -0,0 +1,60 @@
++package com.example.backend_database;
++
++import org.w3c.dom.Text;
++
++public class POJOproduk {
++     public int id_product;
++     public String nama_product;
++     public int harga;
++     public int stok;
++     public Text spesifikasi;
++     public String file;
++
++    public int getId_product() {
++        return id_product;
++    }
++
++    public void setId_product(int id_product) {
++        this.id_product = id_product;
++    }
++
++    public String getNama_product() {
++        return nama_product;
++    }
++
++    public void setNama_product(String nama_product) {
++        this.nama_product = nama_product;
++    }
++
++    public int getHarga() {
++        return harga;
++    }
++
++    public void setHarga(int harga) {
++        this.harga = harga;
++    }
++
++    public int getStok() {
++        return stok;
++    }
++
++    public void setStok(int stok) {
++        this.stok = stok;
++    }
++
++    public Text getSpesifikasi() {
++        return spesifikasi;
++    }
++
++    public void setSpesifikasi(Text spesifikasi) {
++        this.spesifikasi = spesifikasi;
++    }
++
++    public String getFile() {
++        return file;
++    }
++
++    public void setFile(String file) {
++        this.file = file;
++    }
++}
+Index: app/src/main/java/com/example/project_nusantarafit/POJOkeranjang.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/POJOkeranjang.java	(date 1617680624763)
++++ app/src/main/java/com/example/project_nusantarafit/POJOkeranjang.java	(date 1617680624763)
+@@ -0,0 +1,58 @@
++package com.example.backend_database;
++
++public class POJOkeranjang {
++    public int id_keranjang;
++    public int id_user;
++    public int id_produk;
++    public int kuantiti;
++    public int total_harga;
++    public String email;
++
++    public int getId_keranjang() {
++        return id_keranjang;
++    }
++
++    public void setId_keranjang(int id_keranjang) {
++        this.id_keranjang = id_keranjang;
++    }
++
++    public int getId_user() {
++        return id_user;
++    }
++
++    public void setId_user(int id_user) {
++        this.id_user = id_user;
++    }
++
++    public int getId_produk() {
++        return id_produk;
++    }
++
++    public void setId_produk(int id_produk) {
++        this.id_produk = id_produk;
++    }
++
++    public int getKuantiti() {
++        return kuantiti;
++    }
++
++    public void setKuantiti(int kuantiti) {
++        this.kuantiti = kuantiti;
++    }
++
++    public int getTotal_harga() {
++        return total_harga;
++    }
++
++    public void setTotal_harga(int total_harga) {
++        this.total_harga = total_harga;
++    }
++
++    public String getEmail() {
++        return email;
++    }
++
++    public void setEmail(String email) {
++        this.email = email;
++    }
++}
+Index: app/src/main/java/com/example/project_nusantarafit/POJOdet_transaksi.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/POJOdet_transaksi.java	(date 1617680618701)
++++ app/src/main/java/com/example/project_nusantarafit/POJOdet_transaksi.java	(date 1617680618701)
+@@ -0,0 +1,59 @@
++package com.example.backend_database;
++
++public class POJOdet_transaksi {
++    public int id_det_transaksi;
++    public int id_transaksi;
++    public int id_produk;
++    public int kuantiti;
++    public int total;
++
++    public int getId_det_transaksi() {
++        return id_det_transaksi;
++    }
++
++    public void setId_det_transaksi(int id_det_transaksi) {
++        this.id_det_transaksi = id_det_transaksi;
++    }
++
++    public int getId_transaksi() {
++        return id_transaksi;
++    }
++
++    public void setId_transaksi(int id_transaksi) {
++        this.id_transaksi = id_transaksi;
++    }
++
++    public int getId_produk() {
++        return id_produk;
++    }
++
++    public void setId_produk(int id_produk) {
++        this.id_produk = id_produk;
++    }
++
++    public int getKuantiti() {
++        return kuantiti;
++    }
++
++    public void setKuantiti(int kuantiti) {
++        this.kuantiti = kuantiti;
++    }
++
++    public int getTotal() {
++        return total;
++    }
++
++    public void setTotal(int total) {
++        this.total = total;
++    }
++
++    public String getEmail_user() {
++        return email_user;
++    }
++
++    public void setEmail_user(String email_user) {
++        this.email_user = email_user;
++    }
++
++    public String email_user;
++}
+Index: app/src/main/java/com/example/project_nusantarafit/POJOtransaksi.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/POJOtransaksi.java	(date 1617680643883)
++++ app/src/main/java/com/example/project_nusantarafit/POJOtransaksi.java	(date 1617680643883)
+@@ -0,0 +1,51 @@
++package com.example.backend_database;
++
++import java.util.Date;
++
++public class POJOtransaksi {
++    public int id_transaksi;
++    public int total_transaksi;
++    public Date tgl_transaksi;
++    public String status_transaksi;
++    public String email_user;
++
++    public int getId_transaksi() {
++        return id_transaksi;
++    }
++
++    public void setId_transaksi(int id_transaksi) {
++        this.id_transaksi = id_transaksi;
++    }
++
++    public int getTotal_transaksi() {
++        return total_transaksi;
++    }
++
++    public void setTotal_transaksi(int total_transaksi) {
++        this.total_transaksi = total_transaksi;
++    }
++
++    public Date getTgl_transaksi() {
++        return tgl_transaksi;
++    }
++
++    public void setTgl_transaksi(Date tgl_transaksi) {
++        this.tgl_transaksi = tgl_transaksi;
++    }
++
++    public String getStatus_transaksi() {
++        return status_transaksi;
++    }
++
++    public void setStatus_transaksi(String status_transaksi) {
++        this.status_transaksi = status_transaksi;
++    }
++
++    public String getEmail_user() {
++        return email_user;
++    }
++
++    public void setEmail_user(String email_user) {
++        this.email_user = email_user;
++    }
++}
+Index: app/src/main/res/layout/item_shipp.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout\r\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\">\r\n\r\n    <androidx.cardview.widget.CardView\r\n        android:id=\"@+id/cardview\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.0\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.001\"\r\n        tools:ignore=\"MissingConstraints\">\r\n\r\n        <ImageView\r\n            android:id=\"@+id/vouch2\"\r\n            android:layout_width=\"120dp\"\r\n            android:layout_height=\"100dp\"\r\n            android:background=\"#FF9800\"\r\n            android:src=\"@drawable/free\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/txtshipp\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginLeft=\"140dp\"\r\n            android:layout_marginTop=\"16dp\"\r\n            android:text=\"Free Shipping\"\r\n            android:textColor=\"#000\"\r\n            android:textSize=\"20dp\"\r\n            android:textStyle=\"bold\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/txtvalid\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginLeft=\"140dp\"\r\n            android:layout_marginTop=\"45dp\"\r\n            android:text=\"Valid Until\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/txtdate\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginLeft=\"140dp\"\r\n            android:layout_marginTop=\"65dp\"\r\n            android:text=\"31.12.20225\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\" />\r\n\r\n        <Button\r\n            android:id=\"@+id/btnvouch\"\r\n            android:layout_width=\"80dp\"\r\n            android:layout_height=\"45dp\"\r\n            android:layout_marginLeft=\"315dp\"\r\n            android:layout_marginTop=\"25dp\"\r\n            android:background=\"@drawable/red_button\"\r\n            android:text=\"claim\"\r\n            android:textColor=\"#fff\" />\r\n\r\n    </androidx.cardview.widget.CardView>\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/item_shipp.xml	(revision 6795c58cc983c5563239163acee57b7fdbf170d4)
++++ app/src/main/res/layout/item_shipp.xml	(date 1616860085119)
+@@ -7,6 +7,10 @@
+     android:layout_height="match_parent">
+ 
+     <androidx.cardview.widget.CardView
++        android:background="@drawable/rounded2"
++        android:backgroundTint="@color/white"
++        android:layout_margin="8dp"
++        android:padding="8dp"
+         android:id="@+id/cardview"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+Index: app/src/main/java/com/example/project_nusantarafit/POJOadmin.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/project_nusantarafit/POJOadmin.java	(date 1617680615596)
++++ app/src/main/java/com/example/project_nusantarafit/POJOadmin.java	(date 1617680615596)
+@@ -0,0 +1,41 @@
++package com.example.backend_database;
++
++public class POJOadmin {
++    public String email_admin;
++    public String nama_admin;
++    public String pass_admin;
++
++    public String getEmail_admin() {
++        return email_admin;
++    }
++
++    public void setEmail_admin(String email_admin) {
++        this.email_admin = email_admin;
++    }
++
++    public String getNama_admin() {
++        return nama_admin;
++    }
++
++    public void setNama_admin(String nama_admin) {
++        this.nama_admin = nama_admin;
++    }
++
++    public String getPass_admin() {
++        return pass_admin;
++    }
++
++    public void setPass_admin(String pass_admin) {
++        this.pass_admin = pass_admin;
++    }
++
++    public String getLevel_admin() {
++        return level_admin;
++    }
++
++    public void setLevel_admin(String level_admin) {
++        this.level_admin = level_admin;
++    }
++
++    public String level_admin;
++}
