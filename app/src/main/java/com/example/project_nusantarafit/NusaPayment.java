@@ -20,6 +20,7 @@ public class NusaPayment extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.nusantara_pay);
 
+
 //        ArrayList<Pay> arrayPay = new ArrayList<>();
 //        PayAdapter adapter = new PayAdapter(this, arrayPay);
 //        ListView listView = (ListView) findViewById(R.id.list);
@@ -36,5 +37,10 @@ public class NusaPayment extends AppCompatActivity {
     }
     public void PreviousNP(View view) {
         finish();
+    }
+
+    public void BarcodePay(View v){
+        Intent intent = new Intent(NusaPayment.this, Barcode.class);
+        startActivity(intent);
     }
 }

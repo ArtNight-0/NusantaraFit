@@ -52,7 +52,7 @@
         android:layout_height="120dp"
         android:layout_below="@id/LL1"
         android:background="@color/colorLayout"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="80dp">
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/roundedgift"
             android:padding="5dp"
-            android:layout_marginLeft="110dp">
+            android:layout_marginLeft="70dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -90,20 +90,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/LLPOINT"
+            android:layout_marginLeft="250dp"
+            android:layout_marginBottom="100dp"
             android:background="@drawable/roundedgift"
-            android:layout_marginLeft="155dp"
-            android:layout_marginTop="15dp"
-            android:padding="5dp">
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:padding="5dp"
                 android:text="GET IT"
                 android:textColor="@color/red"
                 android:textSize="16dp"
-                android:textStyle="bold"
-                android:padding="5dp"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 

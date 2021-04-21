@@ -19,6 +19,7 @@ public class ProfileFragment extends Fragment {
     ImageButton BtnPointProfile;
     ImageButton BtnCartProfile;
     ImageButton BtnChat;
+    Button BtnOrder;
 
     public View onCreateView(@Nullable LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -72,6 +73,19 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        Button BtnOrder = (Button)rootView.findViewById(R.id.myorder);
+        BtnOrder.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), OrderActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
 //        ImageButton BtnChat = (ImageButton)rootView.findViewById(R.id.chat);
 //        BtnChat.setOnClickListener(new View.OnClickListener() {
 //

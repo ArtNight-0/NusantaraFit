@@ -13,11 +13,13 @@
         android:layout_height="115dp"
         android:background="#FFC107">
         <ImageButton
+            android:onClick="PreviousOrder"
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/previous"
-            android:textColor="#636262" />
+            android:textColor="#636262"
+            tools:ignore="OnClick" />
 
         <TextView
             android:layout_width="130dp"
