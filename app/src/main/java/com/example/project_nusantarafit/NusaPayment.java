@@ -35,7 +35,6 @@ public class NusaPayment extends AppCompatActivity {
 //        adapter.add(pay);
     }
     public void PreviousNP(View view) {
-        Intent intent = new Intent(this, ProfileFragment.class);
-        startActivity(intent);
+        finish();
     }
 }

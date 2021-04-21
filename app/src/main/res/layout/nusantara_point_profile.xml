@@ -12,6 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/colorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <ImageButton
@@ -56,22 +59,50 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/layar2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="72dp"-->
+<!--        android:background="@color/colorLayout3"-->
+<!--        android:columnCount="4"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/hari"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <View-->
+<!--            android:id="@+id/view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="10dp"-->
+<!--            android:background="@drawable/shadow"-->
+<!--            android:elevation="2px"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/LL2"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_below="@id/LL1"
         android:background="@color/colorLayout"
+        app:layout_constraintBottom_toTopOf="@+id/day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="80dp">
+        app:layout_constraintTop_toBottomOf="@+id/LL1"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:id="@+id/LLPOINT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="130dp"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="100dp"
             android:background="@drawable/roundedgift"
             android:padding="5dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -123,42 +154,18 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:id="@+id/layar2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="72dp"-->
-<!--        android:background="@color/colorLayout3"-->
-<!--        android:columnCount="4"-->
-<!--        android:orientation="horizontal"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/hari"-->
-<!--        app:layout_constraintVertical_bias="0.0"-->
-<!--        tools:ignore="MissingConstraints">-->
-
-<!--        <View-->
-<!--            android:id="@+id/view"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="10dp"-->
-<!--            android:background="@drawable/shadow"-->
-<!--            android:elevation="2px"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:id="@+id/hari"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/Primaryorange"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/layout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="258dp">
+        app:layout_constraintTop_toBottomOf="@+id/day"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:id="@+id/hari1"
@@ -187,7 +194,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Hari"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
@@ -202,7 +209,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Hari"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
@@ -217,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Hari"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
@@ -232,7 +239,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Hari"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
@@ -247,24 +254,25 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Hari"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:id="@+id/day"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/Primaryorange"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/hari"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="200dp">
+        app:layout_constraintTop_toBottomOf="@+id/LL2"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:id="@+id/satu"
@@ -386,21 +394,23 @@
 
         </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout3"
         android:layout_width="match_parent"
         android:layout_height="72dp"
+        android:layout_marginBottom="339dp"
         android:background="@color/colorLayout3"
         android:columnCount="4"
         android:orientation="horizontal"
         android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="317dp">
+        app:layout_constraintTop_toBottomOf="@+id/hari"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/history"

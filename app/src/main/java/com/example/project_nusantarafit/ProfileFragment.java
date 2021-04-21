@@ -18,7 +18,7 @@ public class ProfileFragment extends Fragment {
     ImageButton BtnVoucherMyList;
     ImageButton BtnPointProfile;
     ImageButton BtnCartProfile;
-//    ImageButton BtnChatRoom;
+    ImageButton BtnChat;
 
     public View onCreateView(@Nullable LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -72,6 +72,17 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
+//        ImageButton BtnChat = (ImageButton)rootView.findViewById(R.id.chat);
+//        BtnChat.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v){
+//                Intent intent = new Intent(getActivity(), ChatActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
+
         return rootView;
     }
 
