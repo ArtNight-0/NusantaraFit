@@ -87,6 +87,16 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/circle" />
+
+        <ImageButton
+            android:id="@+id/men"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded2"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/men" />
     </LinearLayout>
 
     <LinearLayout
@@ -124,15 +134,7 @@
             android:layout_margin="5dp"
             android:orientation="vertical"
             android:gravity="center">
-            <ImageButton
-                android:id="@+id/men"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/rounded2"
-                android:padding="5dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/men" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
